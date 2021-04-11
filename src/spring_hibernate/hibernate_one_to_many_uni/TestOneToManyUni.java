@@ -16,7 +16,7 @@ public class TestOneToManyUni {
                 .buildSessionFactory();
         Session session = null;
 
-/** Сохранение департамент вместе с работниками в БД
+/** Сохранение департамент вместе с работниками в БД */
 
         try {
             session = factory.getCurrentSession();
@@ -38,9 +38,8 @@ public class TestOneToManyUni {
             session.getTransaction().commit();
             System.out.println("DONE");
         }
- */
 
-/** Получение всех работников из департамента с id=3
+/** Получение всех работников из департамента с id=3 */
 
         try {
             session = factory.getCurrentSession();
@@ -54,9 +53,9 @@ public class TestOneToManyUni {
 
             session.getTransaction().commit();
             System.out.println("DONE");
-*/
 
-/** Удаление департамента
+
+/** Удаление департамента */
 
         try {
             session = factory.getCurrentSession();
@@ -69,7 +68,7 @@ public class TestOneToManyUni {
             session.getTransaction().commit();
             System.out.println("DONE");
         }
-*/
+
         finally {
             session.close();
             factory.close();

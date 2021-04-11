@@ -17,7 +17,7 @@ public class TestManyToMany {
 
         Session session = null;
 
-/**        Добавление объектов в БД в соответствующие таблицы для последнего прописанного cascade
+/**        Добавление объектов в БД в соответствующие таблицы для последнего прописанного cascade */
 
         try {
             session = factory.getCurrentSession();
@@ -38,9 +38,9 @@ public class TestManyToMany {
             session.getTransaction().commit();
             System.out.println("DONE!");
         }
- */
 
-/**          Добавление объектов в БД в соответствующие таблицы для CascadeType.ALL
+/**          Добавление объектов в БД в соответствующие таблицы для CascadeType.ALL */
+
         try {
             session = factory.getCurrentSession();
 
@@ -60,9 +60,9 @@ public class TestManyToMany {
             session.getTransaction().commit();
             System.out.println("DONE!");
         }
- */
 
-/**     Получение списка объектов класса Child из таблицы Section
+/**     Получение списка объектов класса Child из таблицы Section */
+
         try {
             session = factory.getCurrentSession();
 
@@ -76,9 +76,8 @@ public class TestManyToMany {
             session.getTransaction().commit();
             System.out.println("DONE!");
         }
-*/
 
-/**     Получение списка объектов класса Section из таблицы Child
+/**     Получение списка объектов класса Section из таблицы Child */
 
         try {
             session = factory.getCurrentSession();
@@ -93,9 +92,8 @@ public class TestManyToMany {
             session.getTransaction().commit();
             System.out.println("DONE!");
         }
-*/
 
-/**     Удаление объекта класса Child из таблицы Section
+/**     Удаление объекта класса Child из таблицы Section */
 
         try {
             session = factory.getCurrentSession();
@@ -109,7 +107,6 @@ public class TestManyToMany {
             session.getTransaction().commit();
             System.out.println("DONE!");
         }
- */
 
         finally {
             session.close();

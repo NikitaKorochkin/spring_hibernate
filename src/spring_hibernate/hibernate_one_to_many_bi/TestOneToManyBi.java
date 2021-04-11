@@ -16,7 +16,9 @@ public class TestOneToManyBi {
 
 
         Session session = null;
-/**     Добавление департамента с работниками в БД в соответствущие таблицы
+
+/**     Добавление департамента с работниками в БД в соответствущие таблицы */
+
         try {
             session = factory.getCurrentSession();
 
@@ -40,9 +42,8 @@ public class TestOneToManyBi {
             session.getTransaction().commit();
             System.out.println("DONE");
         }
- */
 
-/**     Получение списка всех работников из департамента
+/**     Получение списка всех работников из департамента */
 
          try {
             session = factory.getCurrentSession();
@@ -63,9 +64,8 @@ public class TestOneToManyBi {
             System.out.println(department.getEmps());
             System.out.println("DONE");
         }
- */
 
-/**      Удаление работника
+/**      Удаление работника */
 
          try {
             session = factory.getCurrentSession();
@@ -78,7 +78,6 @@ public class TestOneToManyBi {
             session.getTransaction().commit();
             System.out.println("DONE");
         }
- */
 
         finally {
             session.close();
